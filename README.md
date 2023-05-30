@@ -65,7 +65,7 @@ plot_stats()
 
 ![Train test statistics](images/graphs.png)
 
-### 2. Sample Misclassified Examples:
+### 2. Sample Misclassified Examples (Predicted vs Actual):
 
 ```
 test_show_incorrect(model, device, test_loader)
