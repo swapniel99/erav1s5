@@ -39,7 +39,7 @@ Estimated Total Size (MB): 3.08
 
 ### 2. utils.py
 
-The `utils.py` file contains utility functions used in the project. It includes functions for plotting example images, training the model, testing the model's performance, plotting training statistics, and visualizing incorrectly classified examples.
+The `utils.py` file contains utility functions used in the project. It includes functions for training the model, testing the model's performance, plotting training statistics and visualizing incorrectly classified examples.
 
 ### 3. S5.ipynb
 
