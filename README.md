@@ -4,6 +4,8 @@
 
 This project includes three Python files: `model.py`, `utils.py`, and `S5.ipynb`. These files are part of a machine learning project for image classification using the MNIST dataset. The project involves training a neural network model to recognize handwritten digits.
 
+Few samples in the dataset are shown below.
+
 ![MNIST](images/mnist_sample.png)
 
 
