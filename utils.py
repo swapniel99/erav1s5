@@ -4,11 +4,11 @@ import matplotlib.pyplot as plt
 
 
 def plot_examples(loader):
-    batch_data, batch_label = next(iter(loader)) 
+    batch_data, batch_label = next(iter(loader))
 
     fig = plt.figure()
     for i in range(12):
-        plt.subplot(3, 4, i+1)
+        plt.subplot(3, 4, i + 1)
         plt.tight_layout()
         plt.imshow(batch_data[i].squeeze(0), cmap='gray')
         plt.title(batch_label[i].item())
@@ -53,7 +53,7 @@ def train(model, device, train_loader, optimizer, criterion):
         processed += len(data)
 
         pbar.set_description(
-            desc=f"Train: Loss={loss.item():0.4f} Batch_id={batch_idx} Accuracy={100*correct/processed:0.2f}"
+            desc=f"Train: Loss={loss.item():0.4f} Batch_id={batch_idx} Accuracy={100 * correct / processed:0.2f}"
         )
 
     train_acc.append(100 * correct / processed)

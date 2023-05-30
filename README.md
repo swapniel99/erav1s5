@@ -43,7 +43,7 @@ The `utils.py` file contains utility functions used in the project. It includes 
 
 ### 3. S5.ipynb
 
-The `S5.ipynb` file is the main script that runs the image classification project. It imports the necessary libraries and modules, sets up the device (CPU or GPU) for training, defines data transformations, loads the MNIST dataset, creates data loaders, plots example images, initializes the model, trains the model, tests the model's performance, and visualizes incorrectly classified examples.
+The `S5.ipynb` file is the main script that runs the image classification project. It imports the necessary libraries and modules, sets up the device ('CUDA', 'MPS' or 'CPU') for training, defines data transformations, loads the MNIST dataset, creates data loaders, plots example images, initializes the model, trains the model, tests the model's performance, and visualizes incorrectly classified examples.
 
 ## Usage
 
@@ -55,18 +55,18 @@ You can execute the `S5.ipynb` notebook to perform the training and testing. Adj
 
 Below is the sample output provided by utils.
 
-### Sample Training and Test Stats
+### 1. Sample Training and Test Stats
 
 ```
-[]: plot_stats()
+plot_stats()
 ```
 
 ![Train test statistics](images/graphs.png)
 
-### Sample Misclassified Examples:
+### 2. Sample Misclassified Examples:
 
 ```
-[]: test_show_incorrect(model, device, test_loader)
+test_show_incorrect(model, device, test_loader)
 ```
 
 ![Predicted vs Actual](images/missed.png)
